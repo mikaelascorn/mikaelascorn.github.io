@@ -1,0 +1,145 @@
+.history {
+	max-width: 700px;
+	text-align: center;
+	margin: auto;
+	h2 {
+		padding-top: 40px;
+	}
+	.mooseIcon {
+		position: relative;
+	}
+	.mooseIcon::after {
+		content: '';
+		display: block;
+		width: 100px;
+		height: 1px;
+		top: 50%;
+		left: 55%;
+		background-color: $graylight;
+		position: absolute;
+	}
+	.mooseIcon::before {
+		content: '';
+		display: block;
+		width: 100px;
+		height: 1px;
+		top: 50%;
+		right: 55%;
+		background-color: $graylight;
+		position: absolute;
+	}
+	.mountainImage {
+		display: inline;
+		img {
+			max-width: 100%;
+			padding: 15px;
+		}	
+	}
+	.pages {
+		border: 1px solid $graylight;
+		box-shadow: 3px 0px 22px #888888;
+		max-width: 615px;
+		max-height: 170px;
+		position: relative;
+		top: -50px;
+		right: -40px;
+		background-color: white;
+		padding: 30px;
+		color: gray;
+		font-size: 13px;
+		button {
+			margin: 5px;
+			background-color: white;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-size: 13px;
+			padding: 8px 17px;
+		}
+	}
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 40px;
+		.contentSection {
+			flex: 1 0 33.33%;
+			padding: 20px;
+		}
+		figure {
+			padding-top: 30px;
+			margin: 0px;
+			color: $graylight;
+		}
+		.content1 {
+			border-right: 2px $graylight solid;
+			border-bottom: 2px $graylight solid;
+		}
+		.content2 {
+			border-bottom: 2px $graylight solid;	
+			border-right: 2px $graylight solid;	
+		}
+		.content3 {
+			border-bottom: 2px $graylight solid;				
+		}
+		.content4 {
+			border-right: 2px $graylight solid;	
+		}
+		.content5 {
+			border-right: 2px $graylight solid;				
+		}
+	}
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.history .content .contentSection {
+		flex: 50%;
+		margin: calc ( 50% - 10% );
+	}
+	.history .content .content2 {
+		border-right: none;
+	}
+	.history .content .content3 {
+		border-right: 2px $graylight solid;
+	}
+	.history .content .content4 {
+		border-right: none;
+		border-bottom: 2px $graylight solid;
+	}
+	.history .pages {
+		max-width: 500px;
+		text-align: center;
+		position: static;
+		display: inline-block;
+		margin-bottom: 40px;	
+	}
+}
+
+@media (max-width: 480px) {
+	.history {
+		.content .contentSection {
+			flex: 100%;
+			padding: 10px;
+			margin: 10px 50px;
+		}
+		.content .content1 {
+			border-right: none;
+		}
+		.content .content3 {
+			border-right: none;
+		}
+		.content .content5 {
+			border-bottom: 2px $graylight solid;
+			border-right: none;
+		}
+		.pages	{
+			max-width: 325px;
+			max-height: 275px;
+		}
+		.mountainImage img {
+			max-width: 375px;
+			max-height: 275px;
+		}
+	}
+}

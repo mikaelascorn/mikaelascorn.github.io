@@ -1,0 +1,49 @@
+.newsletterWrapper {
+	background-color: $graylight;
+	height: 130px;
+	.newsletter {
+		max-width: 700px;
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
+		padding-top: 20px;
+		.newsletter1 {
+			margin: auto;
+			h2 {
+				font-size: 20px;
+			}
+			h3 {
+				text-transform: none;
+				font-size: 13px;
+				font-family: 'Handlee', cursive;
+				color: gray;
+			}
+		}	
+	}
+	.signUp {
+		display: flex;
+		height: 25px;
+		font-size: 13px;
+		margin: 0 auto;
+		input[type="submit"] {
+			background-color: black;
+			color: white;
+			padding: 5px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.newsletterWrapper .newsletter {
+		display: inline;
+		margin: 0 auto;
+		text-align: center;	
+		h2 {
+			padding-top: 20px;
+		}
+	}
+	.signUp {
+		justify-content: center;
+	}
+}

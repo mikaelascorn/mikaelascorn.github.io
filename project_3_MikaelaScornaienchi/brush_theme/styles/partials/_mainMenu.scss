@@ -1,0 +1,157 @@
+.wrapper {
+	height: 100vh;
+	color: white;
+	font-size: 12px;
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		margin: auto;
+		max-height: 80px;
+		align-items: center;
+		li {
+			list-style-type: none;
+			padding-right: 10px;
+			text-transform: uppercase;
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			a:hover {
+				border-bottom: 1px solid white;
+				transition: color 0.5s ease-in-out;
+			}
+		}
+		.self {
+			flex-grow: 2;
+		}
+		i.fa-circle {
+			font-size: 4px;
+			padding-left: 10px;
+			margin-bottom: 5px;
+		}
+	}
+	.faBars {
+		display: none;
+	}
+}
+header {
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	flex: 100%;
+	.image {
+		max-width: 90%;
+		width: 120px;
+		height: 120px;
+	}
+	img.logo {
+		// width: 50px;
+		// display: inline;
+		position: relative;
+		max-width: 90%;
+	}
+	img.logo::after {
+		content: '';
+		display: block;
+		width: 40px;
+		height: 5px;
+		background-color: white;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.description {
+		padding: 20px;
+		color: white;
+	}
+	.button {
+		border: 1px white solid;
+		padding: 10px;
+		display: inline;
+		margin-top: 40px;
+		padding-top: 10px;
+		color: white;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif; 
+	}
+	.homeSection p {
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		font-family: cursive;
+		font-size: 17px;
+		padding: 5px;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+	.homeSection p:hover {
+		border: 1px dotted black;
+		background-color: rgba( 0, 0, 0, 0.2 );
+	}
+}
+
+
+@media (max-width: 767px) {
+	.wrapper {
+		position: relative;
+		ul.mainNav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(14, 2, 2, 0.53);
+			display: none;
+			flex-flow: column wrap;
+			text-align: center;
+			justify-content: space-around;
+		}
+		ul.mainNav.open {
+			display: block;
+		}
+		ul.mainNav li {
+			padding: 15px 0;
+			font-size: 2rem;
+		}
+		ul.mainNav a {
+			color: rgba(0,0,0,0.8);
+		}
+		i {
+			display: inline-block;
+		}
+		.faBars {
+			display: block;
+			position: absolute;
+			z-index: 5;
+			top: 10px;
+			right: 10px;
+			font-size: 15px;
+		}
+		ul.mainNav {
+			background-color: rgba(0,0,0,0.2);
+			max-height: 100vh;
+			padding: 10px;
+			z-index: 3;
+			li { 
+				color: black;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.homeSection p {
+		display: none;
+	}
+}
+
+
+

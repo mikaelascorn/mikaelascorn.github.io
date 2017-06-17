@@ -1,0 +1,42 @@
+@import "partials/_setup";
+
+body {
+	margin: 0 auto;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif; 
+	h6 {
+		text-transform: uppercase;
+	}
+	h5 {
+		text-transform: uppercase;
+	}
+	h4 {
+		text-transform: uppercase;
+	}
+	h3 {
+		text-transform: uppercase;
+	}
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 0.3rem;
+		font-size: 20px;
+	}
+	p {
+		font-family: 'Handlee', cursive;
+		font-size: 13px;
+		color: gray;
+	}
+}
+
+$graylight: #F5F5F5;
+
+@import "partials/_mainMenu.scss";
+@import "partials/_flickity.scss";
+@import "partials/_history.scss";
+@import "partials/_recentWork.scss";
+@import "partials/_sideBarWork.scss";
+@import "partials/_latestNews.scss";
+@import "partials/_newsletterSignUp.scss";
+@import "partials/_contactUs.scss";
+@import "partials/_footer.scss"

@@ -1,0 +1,40 @@
+.carousel-cell {
+	width: 100%; /* full width */
+	max-height: 100vh; /* height of carousel */
+	margin-right: 10px;
+	img {
+		max-width: 100%;
+	}
+}
+
+.carousel.flickity-enabled {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	// height: 100vh;
+}
+
+
+.flickity-page-dots {
+	display: none;
+}
+.flickity-prev-next-button {
+	display: none;
+} 
+
+@media (max-width: 767px) {
+	.carousel {
+		display: none;
+	}
+	.wrapper {
+		background-image: url(../assets/second_header2.jpg);
+		background-size: cover;
+		height: 100vh;
+	}
+}
+
+
+
